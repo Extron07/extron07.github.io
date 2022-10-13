@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    z-index: -1;
+    opacity: 50%;
+}
+
+/* Image And logo */
+
+#logo{
+    margin: 0px 5xp ;
+}
+
+#logo img{
+    margin: 0px 5px;
+    padding: 5px 50px 5px 30px ;
+    height: 120px;
+}
+
+/* Navbar Item */
+
+/* #navbar ul li{
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+    margin: 12px 250px;
+    font-size: 7.3rem;
+    color: rgb(255, 255, 255); 
+} */
+
+#NavItem{
+    display: block;
+    margin: auto;
+    font-size: 6.3rem;
+    color: rgb(255, 255, 255);    
+}
+
+/* Home Screen */
+
+#home{
+    display: flex;
+    flex-direction: row;
+    padding: 3px 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color:rgb(0, 0, 0);
+    height: 640px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(image/BG3.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -2;
+    opacity: 100%;
+}
+
+#home img{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    height: 400px;
+    width: 500px;
+    border: 5px solid white;
+    border-radius: 50px ;
+}
+
+#home ul{
+    margin: 70px 20px;
+}
+
+#home ul li{
+    text-decoration: none;
+    display: block;
+    margin: 20px 20px;
+    padding: 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media only screen and (max-width : 1280px) {
+    
+    #logo img{
+        margin: 0px 0px;
+        padding: 5px 50px 5px 30px ;
+        height: 5rem;
+    }
+    
+    #NavItem{
+        font-size: 3.3rem;
+        color: rgb(255, 255, 255);
+    }
+    
+    #home img{
+        height: 250px;
+        width: 250px;        
+    }
+    
+}
+
+@media only screen and (max-width : 700px) {
+    
+    #logo img{
+        margin: 0px 0px;
+        padding: 5px 20px 5px 30px ;
+        height: 4.5rem;
+    }
+
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 12%;
+        width: 100%;
+        z-index: -1;
+        opacity: 50%;
+    }
+
+    #NavItem{
+        margin: 20px 5px;
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);  
+    }
+    
+    #home{
+        flex-direction: column;
+        
+    }
+    #home img{
+        display: block;
+        margin: auto;
+        height: 250px;
+        width: 240px;      
+    }
+
+    #home ul {
+        margin: 40px 0px;
+    }
+    
+    #home ul li{
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
